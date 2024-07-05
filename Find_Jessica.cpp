@@ -7,21 +7,14 @@ int main() {
 
     istringstream iss(S);
     string word;
-    bool found = false;
 
     while (iss >> word) {
         if (word == "Jessica") {
-            found = true;
-            break;
+            cout << "YES" << endl;
+            return 0; 
         }
     }
 
-    if (found) {
-        cout << "YES" << endl;
-    } else {
-        cout << "NO" << endl;
-    }
-
+    cout << "NO" << endl;
     return 0;
 }
-
